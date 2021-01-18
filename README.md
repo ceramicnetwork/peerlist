@@ -1,4 +1,4 @@
-# Ceramic Peerlist
+# 🌐 Ceramic Peerlist
 
 This repository contains a list of Ceramic nodes that can be used as a bootstrap mechanism for peer discovery on the Ceramic network. When you start up a new Ceramic node it will automatically query this repository to discover available peers and connect to them. 
 
