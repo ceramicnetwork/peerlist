@@ -6,9 +6,9 @@ This repository contains a list of Ceramic nodes that can be used as a bootstrap
 
 ## Adding your node
 
-To add your node, simply submit a pull request to the correct peerlist file. Peerlist files are separated by name of the Ceramic network. Currently, there is only one peerlist:
+Submit a pull request adding your node to the correct peerlist file. Peerlist files are separated by name of the Ceramic network. Currently, there is only one peerlist:
 
-- **[`testnet-clay.json`](testnet-clay.json)**: A list of nodes on the `testnet-clay` Ceramic network
+- **[`testnet-clay.json`](testnet-clay.json)**: A list of nodes that run the `testnet-clay` Ceramic network
 
 ## Why peerlist?
 
