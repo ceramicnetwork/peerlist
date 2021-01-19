@@ -2,7 +2,7 @@
 
 This repository contains a list of Ceramic nodes that can be used as a bootstrap mechanism for peer discovery on the [Ceramic Network](https://github.com/ceramicnetwork/ceramic). When you start up a new Ceramic node it will automatically query this repository to discover available peers and connect to them. 
 
-> **⚠️  If you're running a Cermic node, you need to add your node to this list.**
+> **⚠️  If you're running a Cermic node, you need to add your node to this list. If you don't, then other nodes on the network will be unable to read Ceramic documents or commits created on your node**
 
 ## Adding your node
 Submit a pull request to this repository adding the *multiaddress* of your node to the correct peerlist file. Before you do so, make sure that the correct port is open so that other peers can make connections to your node. Peerlist files are organized by name of the Ceramic network. Currently, there is only one peerlist:
