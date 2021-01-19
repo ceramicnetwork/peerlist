@@ -14,7 +14,7 @@ Please add the maintainers below as reviewers for your PR. They will do their be
 
 ## Why peerlist?
 
-Peerlist is a *temporary* solution for peer discovery in Ceramic that will be used during the Clay testnet. Peerlist is needed because the current JavaScript implementation of the DHT in libp2p (a p2p networking library used in Ceramic) is not yet sufficient to deliver optimal performance for a live decentralized network. However when Ceramic launches Fire mainnet near the end of Q1 2021, we will replace `peerlist` with the purely decentralized peer-to-peer discovery mechanism provided by libp2p. 🚀
+Peerlist is a *temporary* solution for peer discovery in Ceramic that will be used during the Clay testnet. Peerlist is needed because the current JavaScript implementation of the DHT in `libp2p` (a p2p networking library used in Ceramic) is not yet sufficient to deliver optimal performance for a live decentralized network. However when Ceramic launches Fire mainnet near the end of Q1 2021, we will replace `peerlist` with the purely decentralized peer-to-peer discovery mechanism provided by libp2p. 🚀
 
 ## Maintainers
 
