@@ -1,0 +1,22 @@
+{
+    "name": "ceramic-peerlist-tests",
+    "version": "0.0.1",
+    "author": "@v-stickykeys",
+    "license": "(Apache-2.0 OR MIT)",
+    "keywords": [
+        "ceramic",
+        "peerlist",
+        "ipfs",
+        "eth",
+        "3box"
+    ],
+    "scripts": {
+        "test": "jest"
+    },
+    "devDependencies": {
+        "@ceramicnetwork/ipfs-daemon": "^1.0.7",
+        "@ceramicnetwork/ipfs-topology": "^1.1.6",
+        "ipfs-core": "^0.8.0",
+        "jest": "^26.6.3"
+    }
+}
