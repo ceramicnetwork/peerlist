@@ -11,12 +11,32 @@
         "3box"
     ],
     "scripts": {
-        "test": "jest"
+        "build": "tsc",
+        "test:dev": "JEST_CERAMIC_NETWORK=dev-unstable ./node_modules/.bin/jest --runInBand --env=node",
+        "test:clay": "JEST_CERAMIC_NETWORK=testnet-clay ./node_modules/.bin/jest --runInBand --env=node",
+        "test:fire": "JEST_CERAMIC_NETWORK=mainnet ./node_modules/.bin/jest --runInBand --env=node"
     },
     "devDependencies": {
+        "@babel/core": "^7.12.17",
+        "@types/jest": "^26.0.24",
+        "@types/node": "^13.13.15",
+        "@types/stream-to-array": "^2.3.0",
+        "@babel/plugin-transform-modules-commonjs": "^7.10.4",
+        "@babel/preset-env": "^7.8.4",
+        "@babel/preset-typescript": "^7.9.0",
+        "@babel/register": "^7.10.5",
+        "babel-jest": "^26.6.3",
+        "jest": "^26.6.3",
+        "ts-node": "^9.0.0",
+        "ts-jest": "^26.4.4",
+        "typescript": "^4.2.4",
+        "uint8arrays": "^2.0.5",
+        "jest-environment-uint8array": "^1.0.0",
+        "jest-mock-extended": "^1.0.10",
+        "jest-resolver-enhanced": "^1.0.0"
+    },
+    "dependencies": {
         "@ceramicnetwork/ipfs-daemon": "^1.0.7",
-        "@ceramicnetwork/ipfs-topology": "^1.1.6",
-        "ipfs-core": "^0.8.0",
-        "jest": "^26.6.3"
+        "@ceramicnetwork/ipfs-topology": "1.1.7-rc.2"
     }
 }
