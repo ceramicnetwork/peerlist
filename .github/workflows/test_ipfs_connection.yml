@@ -3,10 +3,10 @@ name: Test IPFS connection
 on:
   push:
     branches:
-      - ci/testing
-  # pull_request:
-  #   branches:
-  #     - main
+      - main
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
     inputs:
       environment:
