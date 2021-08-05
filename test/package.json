@@ -12,9 +12,9 @@
     ],
     "scripts": {
         "build": "tsc",
-        "test:dev": "JEST_CERAMIC_NETWORK=dev-unstable ./node_modules/.bin/jest --runInBand",
-        "test:clay": "JEST_CERAMIC_NETWORK=testnet-clay ./node_modules/.bin/jest --runInBand",
-        "test:fire": "JEST_CERAMIC_NETWORK=mainnet ./node_modules/.bin/jest --runInBand"
+        "test:dev": "JEST_CERAMIC_NETWORK=dev-unstable ./node_modules/.bin/jest --runInBand --detectOpenHandles --forceExit",
+        "test:clay": "JEST_CERAMIC_NETWORK=testnet-clay ./node_modules/.bin/jest --runInBand --detectOpenHandles --forceExit",
+        "test:fire": "JEST_CERAMIC_NETWORK=mainnet ./node_modules/.bin/jest --runInBand --detectOpenHandles --forceExit"
     },
     "devDependencies": {
         "@ceramicnetwork/ipfs-daemon": "^1.0.7",
