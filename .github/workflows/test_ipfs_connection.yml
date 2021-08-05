@@ -31,4 +31,5 @@ jobs:
       - name: Run test
         run: |
             cd ./test
+            npm ci
             npm run test
