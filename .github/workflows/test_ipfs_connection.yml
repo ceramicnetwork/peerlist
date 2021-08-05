@@ -1,9 +1,12 @@
 name: Test IPFS connection
 
 on:
-  # pull_request:
-  #   branches:
-  #     - main
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
     inputs:
       environment:
@@ -11,9 +14,10 @@ on:
         required: true
         default: 'dev-unstable'
 
+# TODO: Make this smarter so it only runs for environment that actually gets updated
 jobs:
   test:
-    runs-on: self-hosted
+    runs-on: ubuntu-18.04
     strategy:
       matrix:
         include:
@@ -23,10 +27,13 @@ jobs:
     env:
       JEST_CERAMIC_NETWORK: ${{ matrix.env }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
 
       - name: Run test
         run: |
             cd ./test
+            npm ci
             npm run test

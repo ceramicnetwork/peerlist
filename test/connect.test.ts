@@ -18,15 +18,12 @@ const peerlistByNetwork: Record<string, string[]> = {
 const tempFilePath = () => `/tmp/jest/peerlist/connect.test.ts/${Date.now()}`
 
 describe('IpfsDaemon', () => {
-    let ipfsDaemon;
-    afterEach(async () => {
-        await ipfsDaemon.stop()
-    })
     test('fails to connect to invalid bootstrap list', async () => {
+        jest.setTimeout(5000 * 60) // 5m
         const consoleSpy = jest.spyOn(console, 'log')
 
         const peerlist = ['not.a.multiaddress']
-        ipfsDaemon = await createIpfsDaemon(peerlist)
+        const ipfsDaemon = await createIpfsDaemon(peerlist)
         await ipfsDaemon.start()
 
         for (const multiaddress of peerlist) {
@@ -36,12 +33,14 @@ describe('IpfsDaemon', () => {
             })
             expect(result).toBeTruthy()
         }
+        await ipfsDaemon.stop()
     })
     test('connects successfully to valid bootstrap list', async () => {
+        jest.setTimeout(5000 * 60) // 5m
         const consoleSpy = jest.spyOn(console, 'log')
 
         const peerlist = peerlistByNetwork[ceramicNetwork]
-        ipfsDaemon = await createIpfsDaemon(peerlist)
+        const ipfsDaemon = await createIpfsDaemon(peerlist)
         await ipfsDaemon.start()
 
         for (const multiaddress of peerlist) {
@@ -51,6 +50,7 @@ describe('IpfsDaemon', () => {
             })
             expect(result).toBeTruthy()
         }
+        await ipfsDaemon.stop()
     })
 })
 
