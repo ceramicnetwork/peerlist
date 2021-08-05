@@ -19,6 +19,7 @@ const tempFilePath = () => `/tmp/jest/peerlist/connect.test.ts/${Date.now()}`
 
 describe('IpfsDaemon', () => {
     test('fails to connect to invalid bootstrap list', async () => {
+        jest.setTimeout(5000 * 60) // 5m
         const consoleSpy = jest.spyOn(console, 'log')
 
         const peerlist = ['not.a.multiaddress']
@@ -35,6 +36,7 @@ describe('IpfsDaemon', () => {
         await ipfsDaemon.stop()
     })
     test('connects successfully to valid bootstrap list', async () => {
+        jest.setTimeout(5000 * 60) // 5m
         const consoleSpy = jest.spyOn(console, 'log')
 
         const peerlist = peerlistByNetwork[ceramicNetwork]
