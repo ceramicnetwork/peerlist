@@ -1,0 +1,32 @@
+name: Test IPFS connection
+
+on:
+  # pull_request:
+  #   branches:
+  #     - main
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment name (one of: dev-unstable, testnet-clay, mainnet)'
+        required: true
+        default: 'dev-unstable'
+
+jobs:
+  test:
+    runs-on: self-hosted
+    strategy:
+      matrix:
+        include:
+          - env: dev-unstable
+          - env: testnet-clay
+          - env: mainnet
+    env:
+      JEST_CERAMIC_NETWORK: ${{ matrix.env }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Run test
+        run: |
+            cd ./test
+            npm run test
