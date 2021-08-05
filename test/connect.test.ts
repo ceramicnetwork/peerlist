@@ -9,7 +9,7 @@ import peerlistMainnet from '../mainnet.json'
 
 const ceramicNetwork: string = process.env.JEST_CERAMIC_NETWORK || ''
 
-const peerlistByNetwork: { [key: string]: string[] } = {
+const peerlistByNetwork: Record<string, string[]> = {
     'dev-unstable': peerlistDevUnstable,
     'testnet-clay': peerlistTestnetClay,
     'mainnet': peerlistMainnet
