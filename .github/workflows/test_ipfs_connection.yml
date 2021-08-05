@@ -14,9 +14,10 @@ on:
         required: true
         default: 'dev-unstable'
 
+# TODO: Make this smarter so it only runs for environment that actually gets updated
 jobs:
   test:
-    runs-on: self-hosted
+    runs-on: ubuntu-18.04
     strategy:
       matrix:
         include:
