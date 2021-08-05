@@ -7,9 +7,5 @@ module.exports = {
   preset: "ts-jest",
   testEnvironment: "node",
   testRegex: ".(spec|test).ts$",
-  transformIgnorePatterns: [],
-  modulePathIgnorePatterns: [
-    "lib"
-  ],
   resolver: "jest-resolver-enhanced"
 };
