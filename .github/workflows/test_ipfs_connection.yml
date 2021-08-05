@@ -1,6 +1,9 @@
 name: Test IPFS connection
 
 on:
+  push:
+    branches:
+      - ci/testing
   # pull_request:
   #   branches:
   #     - main
