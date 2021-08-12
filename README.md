@@ -34,10 +34,7 @@ Peerlist is a *temporary* solution for peer discovery in Ceramic that will be us
 
 ## Maintainers
 
-- Joel Thorstensson ([@oed](https://github.com/oed))
 - Val ([@v-stickykeys](https://github.com/v-stickykeys))
-- Spencer T Brody ([@stbrody](https://github.com/stbrody))
-- Zach Ferland ([@zachferland](https://github.com/zachferland))
 
 ## License
 
