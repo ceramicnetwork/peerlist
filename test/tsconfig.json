@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+        "module": "commonjs", /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */
+        "lib": [
+            "es6",
+            "dom",
+            "esnext"
+        ],
+        "target": "ES2018",
+        "declaration": true,
+        "declarationMap": true,
+        "skipLibCheck": true,
+        "resolveJsonModule": true,
+        "removeComments": true,
+        "esModuleInterop": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "sourceMap": true,
+        "typeRoots": [
+            "./types",
+            "node_modules/@types"
+        ]
+    },
+    "exclude": [
+        "node_modules",
+        "coverage"
+    ],
+    "strict": true, /* Enable all strict type-checking options. */
+    "resolveJsonModule": true,
+    "esModuleInterop": true, /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
+    "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */
+}
