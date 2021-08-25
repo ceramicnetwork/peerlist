@@ -11,6 +11,8 @@ Submit a pull request to this repository adding the *multiaddress* of your node 
 - **[`testnet-clay.json`](testnet-clay.json)**: A list of nodes that run the `testnet-clay` Ceramic network
 - **[`dev-unstable.json`](dev-unstable.json)**: A list of nodes that run the `dev-unstable` Ceramic network
 
+It is encouraged to first deploy to the Clay testnet before mainnet. If you are submitting a pull request for the mainnet Ceramic network, you must include a description of how you are ensuring data persistence of your node's multiaddress, Ceramic State Store and IPFS Repo. This is a critical step, as otherwise if your node restarts for any reason it will regenerate this file with a new address and all other nodes on the network will lose their connection to you. Any time your multiaddress changes, you will need to submit a new pull request to reconnect to hte network. The Ceramic State Store data and IPFS repo, created in the IPFS folder (your node will create a .ceramic and IPFS file) hold the data for streams you're pinning, so it's important to also persist these files as for now there are no guarantees that other nodes are also keeping copies of that data.
+
 Please add one of the maintainers below as reviewers for your PR. They will do their best to merge PRs as soon as they come in. If you need more immediate assistance, reach out on [Discord](https://chat.ceramic.network) and include the URL of your PR.
 
 ### Find your *multiaddress*
@@ -26,7 +28,10 @@ Swarm listening on /ip4/127.0.0.1/tcp/4003/ws/p2p/QmNZfs1Vevknvmykz3fWKTjhmEpcka
 
 It is recommended that you use a websocket multiaddress with SSL. Make sure that the appropriate port is open (`4003` in the example above), then replace `127.0.0.1` with your external IP address. You may also choose to configure your multiaddress with a DNS name (see [multiaddress docs](https://github.com/multiformats/multiaddr)).
 
-If you run an IPFS node external to the Ceramic daemon, you will see a similar log output on startup and you can simply get the multiaddress from there.
+You can view the multiaddress in the config file that IPFS creates. By default, it will be located in a directory call IPFS. The multiaddress includes the PeerID at the end. If you run an IPFS node external to the Ceramic daemon, you will see a similar log output on startup and you can simply get the multiaddress from there.
+
+When a pull request is submitted, it triggers a connectivity test to make sure your node is successfully connected to the network. If this fails, the 3Box Labs team will reach out to you to triage the issue. Make sure there are no firewalls blocking your instance and that your port is properly exposed. It may also take some time for your node to be added to the Ceramic Anchor Service (CAS).
+
 
 ## Why peerlist?
 
