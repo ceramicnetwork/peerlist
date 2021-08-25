@@ -7,6 +7,8 @@ This repository contains a list of Ceramic nodes that can be used as a bootstrap
 ## Adding your node
 Submit a pull request to this repository adding the *multiaddress* of your node to the correct peerlist file. Before you do so, make sure that the correct port is open so that other peers can make connections to your node. Peerlist files are organized by name of the Ceramic network. Currently, there are three peerlists:
 
+# Val was here
+
 - **[`mainnet.json`](mainnet.json)**: A list of nodes that run the `mainnet` Ceramic network
 - **[`testnet-clay.json`](testnet-clay.json)**: A list of nodes that run the `testnet-clay` Ceramic network
 - **[`dev-unstable.json`](dev-unstable.json)**: A list of nodes that run the `dev-unstable` Ceramic network
