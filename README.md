@@ -31,6 +31,8 @@ It is recommended that you use a websocket multiaddress and configure SSL (e.g. 
 ### Connectivity test
 When a pull request is submitted, it triggers a connectivity test to make sure your node is successfully connected to the network. If this fails, the 3Box Labs team will reach out to you to triage the issue. Make sure there are no firewalls blocking your instance and that your port is properly exposed.
 
+Once you are on the peerlist, you should monitor your IPFS node and alert our team on Discord in the case of any planned or unexpected downtime. Please make your best effort to come back online within 24 hours. If we can not connect to your IPFS node for over 24 hours, we will remove it from the peerlist and you can resubmit your multiaddress in a new PR once your node becomes stable again. If the connectivity test in your PR to the peerlist fails and it is due to a node other than your own, we will update the peerlist and re-run the tests for you.
+
 ### Readiness checklist
 Before submitting a PR, ensure that your setup has the following:
 - [ ] Swarm port for IPFS node is open to the internet so that peers can make connections to your node
