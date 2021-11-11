@@ -15,5 +15,6 @@
   "/dns4/ceramic.safient.io/tcp/4012/ws/p2p/QmZ28QWFwVZWHmfgh7RdsCcMtFVQxetHaGmkpw2q8ACWh6",
   "/dns4/tccc-ipfs-daemon.eastus.azurecontainer.io/tcp/4012/ws/p2p/QmP5BvekZy5AohYnQQTtEVT8BvnAeKk6QedY5P9MdTp5My",
   "/dns4/ipfs.ceramic.spruceid.xyz/tcp/4012/wss/p2p/QmafAQB9JMS59qNtiGNtmPP6PqXciehC9rwSQJ7dgCH1rU",
-  "/dns4/ceramic-prod-33-1-ipfs-nd-ex-1523272531.us-east-1.elb.amazonaws.com/tcp/4012/ws/p2p/QmWuMcMC3uq4aVDBehxYJy4ncaf1TdF5xmtq8WVZdAFtmN"
+  "/dns4/ceramic-prod-33-1-ipfs-nd-ex-1523272531.us-east-1.elb.amazonaws.com/tcp/4012/ws/p2p/QmWuMcMC3uq4aVDBehxYJy4ncaf1TdF5xmtq8WVZdAFtmN",
+  "/dns4/ceramic-ipfs.welibrary.io/tcp/4012/wss/p2p/QmYmQ487j4sXKu28hG7LVKtwXe8qTxbLsiZxtcjao2uwfn"
 ]
