@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+    paths: "*.json"
   pull_request:
     branches:
       - main
@@ -14,7 +15,6 @@ on:
         required: true
         default: 'dev-unstable'
 
-# TODO: Make this smarter so it only runs for environment that actually gets updated
 jobs:
   test:
     runs-on: ubuntu-18.04
@@ -31,8 +31,16 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-
+      - name: List changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v11.5
+        with:
+          files: |
+            dev-unstable.json
+            testnet-clay.json
+            mainnet.json
       - name: Run test
+        if: contains(steps.changed-files.outputs.modified_files, "${{ matrix.env }}.json")
         run: |
             cd ./test
             npm ci
