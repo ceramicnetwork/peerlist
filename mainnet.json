@@ -5,9 +5,7 @@
   "/dns4/ipfs-ceramic-elp-1-1-external.3boxlabs.com/tcp/4012/wss/p2p/QmUiF8Au7wjhAF9BYYMNQRW5KhY7o8fq4RUozzkWvHXQrZ",
   "/dns4/ipfs-ceramic-elp-1-2-external.3boxlabs.com/tcp/4012/wss/p2p/QmRNw9ZimjSwujzS3euqSYxDW9EHDU5LB3NbLQ5vJ13hwJ",
   "/dns4/ceramic-node.vitalpointai.com/tcp/4012/ws/p2p/QmVH335h3srKvSTZKr5bcLFbnvfVZSewVzpkbEX9XHcLsQ",
-  "/dns4/ipfs-ceramic-elp-external.ownershiplabs.com/tcp/4012/ws/p2p/QmSiSc4WetTWsNzv8ukpXk57tyDNVqwbvMAKp1MUvo5pF8",
   "/dns4/ceramic-node.musex.io/tcp/4012/ws/p2p/QmVWJymQvxWfTcd26dcc2YDpHtA2AJ7tSpzjR2YZR2QEsD",
-  "/dns4/ipfs-ceramic-elp.yam.finance/tcp/4012/ws/p2p/QmSiSc4WetTWsNzv8ukpXk57tyDNVqwbvMAKp1MUvo5pF8",
   "/dns4/ceramic-one.hoprnet.io/tcp/4012/wss/p2p/QmRVm5wdoQBym4yY15t5TNb6uVNLyEBxB2MNoUL4Mfq5pq",
   "/dns4/ceramic.hide.ac/tcp/4012/wss/p2p/Qmc3krvy6CFgCn8bBCooSrAcTC64Vc8i7cAc84iSUpKVkT",
   "/dns4/ipfs-external.fungy.link/tcp/4012/wss/p2p/QmRJsyC2Qmdgu3PGshFoSPe9jGgghVbFnapqXkCM8DpUR4",
@@ -15,5 +13,8 @@
   "/dns4/ceramic.safient.io/tcp/4012/ws/p2p/QmZ28QWFwVZWHmfgh7RdsCcMtFVQxetHaGmkpw2q8ACWh6",
   "/dns4/tccc-ipfs-daemon.eastus.azurecontainer.io/tcp/4012/ws/p2p/QmP5BvekZy5AohYnQQTtEVT8BvnAeKk6QedY5P9MdTp5My",
   "/dns4/ipfs.ceramic.spruceid.xyz/tcp/4012/wss/p2p/QmafAQB9JMS59qNtiGNtmPP6PqXciehC9rwSQJ7dgCH1rU",
+  "/dns4/ceramic-ipfs.welibrary.io/tcp/4012/wss/p2p/QmYmQ487j4sXKu28hG7LVKtwXe8qTxbLsiZxtcjao2uwfn",
+  "/dns4/ceramic-node.figment.io/tcp/4012/ws/p2p/QmU7oXbft3fBXahQmoTiu3DaGmdRA2T3jQEUnDZ15NAAtJ",
+  "/dns4/mgatsonides.nl/tcp/4012/wss/p2p/Qmbhej3gEsPq1Wuoh5ZizqDpi9neeeotSRS2FoAtjqDqM9",
   "/dns4/ipfs.rabbithole.gg/tcp/4012/wss/p2p/Qmc1e7SGtSFAAfzvD8nyGq9MvWebzsDCtgWD5ndJike4FZ"
 ]
