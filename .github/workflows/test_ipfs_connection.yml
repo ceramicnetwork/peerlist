@@ -29,8 +29,6 @@ jobs:
       JEST_CERAMIC_NETWORK: ${{ matrix.env }}
     steps:
       - uses: actions/checkout@v2
-        with:
-          fetch-depth: 2
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
