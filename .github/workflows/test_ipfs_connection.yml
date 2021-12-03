@@ -14,10 +14,10 @@ on:
       environment:
         description: 'Environment name (one of: dev-unstable, testnet-clay, mainnet)'
         required: true
-        default: ''
+        default: 'dev-unstable'
 
 jobs:
-  test:
+  test_automated:
     runs-on: ubuntu-18.04
     strategy:
       matrix:
@@ -46,9 +46,19 @@ jobs:
             cd ./test
             npm ci
             npm run test
+
+  test_manual:
+    runs-on: ubuntu-18.04
+    env:
+      JEST_CERAMIC_NETWORK: ${{ github.event.inputs.environment }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
       - name: Run test (manual)
-        if: ${{ github.event.inputs.environment == matrix.env }}
+        if: ${{ github.event.inputs.environment != '' }}
         run: |
-            cd ./test
-            npm ci
-            npm run test
+          cd ./test
+          npm ci
+          npm run test
