@@ -14,7 +14,7 @@ on:
       environment:
         description: 'Environment name (one of: dev-unstable, testnet-clay, mainnet)'
         required: true
-        default: 'dev-unstable'
+        default: ''
 
 jobs:
   test:
@@ -29,6 +29,8 @@ jobs:
       JEST_CERAMIC_NETWORK: ${{ matrix.env }}
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
@@ -40,8 +42,14 @@ jobs:
             dev-unstable.json
             testnet-clay.json
             mainnet.json
-      - name: Run test
+      - name: Run test (automated)
         if: contains(steps.changed-files.outputs.modified_files, "${{ matrix.env }}.json")
+        run: |
+            cd ./test
+            npm ci
+            npm run test
+      - name: Run test (manual)
+        if: ${{ github.event.inputs.environment == matrix.env }}
         run: |
             cd ./test
             npm ci
