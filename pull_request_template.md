@@ -1,5 +1,8 @@
 ### Team
-<!--Team name or your github handle if you are a team of one-->
+<!--Team name-->
+
+*Submitter Discord handle:*
+<!--Discord handle of the person submitting this PR (including digits)-->
 
 ### Use case
 <!--A few words about what how your node will be used so we can make recommendations for your setup-->
@@ -7,7 +10,10 @@
 ### Overview
 <!--How are you running your nodes? What cloud infrastructure? Are you running IPFS out-of-process?-->
 
-*Multiaddress persistence:*
+*IPFS Multiaddress:*
+<!--Multiaddress of your IPFS node.-->
+
+*IPFS Multiaddress persistence:*
 <!--What are you doing to ensure your multiaddress won't change?-->
 
 *Ceramic State Store persistence:*
