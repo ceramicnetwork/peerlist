@@ -14,7 +14,6 @@ on:
       environment:
         description: 'Environment name (one of: dev-unstable, testnet-clay, mainnet)'
         required: true
-        default: 'dev-unstable'
 
 jobs:
   test_automated:
