@@ -1,0 +1,28 @@
+Team
+GoodDollar
+
+Submitter Discord handle:
+AndreW#3549
+
+Use case
+
+Overview
+Running on Vultr VPS, using in-process IPFS.
+
+IPFS Multiaddress:
+Swarm listening on /ip4/127.0.0.1/tcp/4011/p2p/QmahYokVGMAAQzKkSCA3GiiHQT2PEqkBvRHoyYJuff9Ega
+Swarm listening on /ip4/172.17.0.2/tcp/4011/p2p/QmahYokVGMAAQzKkSCA3GiiHQT2PEqkBvRHoyYJuff9Ega
+Swarm listening on /ip4/127.0.0.1/tcp/4012/ws/p2p/QmahYokVGMAAQzKkSCA3GiiHQT2PEqkBvRHoyYJuff9Ega
+Swarm listening on /ip4/172.17.0.2/tcp/4012/ws/p2p/QmahYokVGMAAQzKkSCA3GiiHQT2PEqkBvRHoyYJuff9Ega
+
+IPFS Multiaddress persistence:
+Data stored on separate persistent mount disk.
+
+Ceramic State Store persistence:
+Data stored on separate persistent mount disk.
+
+IPFS Repo persistence:
+Data stored on separate persistent mount disk.
+
+Static IP:
+209.250.224.39
