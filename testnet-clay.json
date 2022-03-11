@@ -4,5 +4,6 @@
   "/dns4/ipfs-ceramic-private-clay-external.3boxlabs.com/tcp/4012/wss/p2p/QmQotCKxiMWt935TyCBFTN23jaivxwrZ3uD58wNxeg5npi",
   "/dns4/ipfs-ceramic-private-cas-clay-external.3boxlabs.com/tcp/4012/wss/p2p/QmbeBTzSccH8xYottaYeyVX8QsKyox1ExfRx7T1iBqRyCd",
   "/dns4/ipfs-clay-1.ceramic.geoweb.network/tcp/4012/ws/p2p/QmbDGaByZoomn3NQQjZzwaPWH6ei3ptzWK7a7ECtS35DKL",
-  "/ip4/209.250.224.39/tcp/4011/p2p/QmahYokVGMAAQzKkSCA3GiiHQT2PEqkBvRHoyYJuff9Ega"
+  "/ip4/209.250.224.39/tcp/4011/p2p/QmahYokVGMAAQzKkSCA3GiiHQT2PEqkBvRHoyYJuff9Ega",
+  "/dns4/ipfs-ceramic-public-clay-external.fayre.com/tcp/4012/wss/p2p/QmTQmSuinoEFAsJUw1mBTy5kW9pexgvMLrPKeGbbkkAk6z"
 ]
