@@ -1,14 +1,14 @@
 name: Test IPFS connection
 
 on:
-  push:
-    branches:
-      - main
-    paths: "*.json"
-  pull_request:
-    branches:
-      - main
-    paths: "*.json"
+#   push:
+#     branches:
+#       - main
+#     paths: "*.json"
+#   pull_request:
+#     branches:
+#       - main
+#     paths: "*.json"
   workflow_dispatch:
     inputs:
       environment:
