@@ -6,5 +6,9 @@
   "/dns4/go-ipfs-ceramic-public-dev-external.3boxlabs.com/tcp/4011/ws/p2p/QmZemfeeej3Q4BAzGHLsthgDURUnNGyUuV6XcVyAbWzDVp",
   "/dns4/go-ipfs-ceramic-public-dev-external.ceramic.network/tcp/4011/ws/p2p/QmPZqHSV15UtDHFDk7BVN8TkgkDzy9km8DuXNMCLDb7S6L",
   "/dns4/go-ipfs-ceramic-private-dev-external.3boxlabs.com/tcp/4011/ws/p2p/Qmdb7UeJeid2Wf481g9Wvx2MPcPGVBc6rAj2PPiz9mnnqC",
-  "/dns4/go-ipfs-ceramic-private-cas-dev-external.3boxlabs.com/tcp/4011/ws/p2p/QmSkY7YHn7kWgZB782T7GQve873FVzQfvtjJb9HavdzvwX"
+  "/dns4/go-ipfs-ceramic-private-cas-dev-external.3boxlabs.com/tcp/4011/ws/p2p/QmSkY7YHn7kWgZB782T7GQve873FVzQfvtjJb9HavdzvwX",
+  "/dns4/ipfs-ceramic-public-dev-external.3boxlabs.com/tcp/4011/ws/p2p/QmZemfeeej3Q4BAzGHLsthgDURUnNGyUuV6XcVyAbWzDVp",
+  "/dns4/ipfs-ceramic-public-dev-external.ceramic.network/tcp/4011/ws/p2p/QmPZqHSV15UtDHFDk7BVN8TkgkDzy9km8DuXNMCLDb7S6L",
+  "/dns4/ipfs-ceramic-private-dev-external.3boxlabs.com/tcp/4011/ws/p2p/Qmdb7UeJeid2Wf481g9Wvx2MPcPGVBc6rAj2PPiz9mnnqC",
+  "/dns4/ipfs-ceramic-private-cas-dev-external.3boxlabs.com/tcp/4011/ws/p2p/QmSkY7YHn7kWgZB782T7GQve873FVzQfvtjJb9HavdzvwX"
 ]
