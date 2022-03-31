@@ -23,5 +23,6 @@
   "/dns4/ceramic.litgateway.com/tcp/4012/ws/p2p/QmcGqpNsbf5hQ4iZxL5nAPPffiMRUfcxet5wzpGArQPybV",
   "/dns4/ceramic-ipfs.minds.io/tcp/4012/ws/p2p/Qme6iSNx51Kt34wiRfagt24C3BJSkyqhJSKNrk6QUsPkvJ",
   "/dns4/ipfs-ceramic-public-mainnet-external.fayre.com/tcp/4012/wss/p2p/QmRGLie2fXVjys7B3eiySgRBtPRFHRzrAyes6H9AZ7DhQA",
-  "/dns4/ceramic.validatrium.com/tcp/4012/ws/p2p/QmQawUaCRNmSUA3MJNeEPLivqTg6KXnGTVCsgwGanW79rL"
+  "/dns4/ceramic.validatrium.com/tcp/4012/ws/p2p/QmQawUaCRNmSUA3MJNeEPLivqTg6KXnGTVCsgwGanW79rL",
+  "/dns4/ceramic-ipfs.viaheadline.xyz/tcp/4012/wss/p2p/QmbBV2YZH1zPo3oCgUnBd9eSt4MjCrbNM7QhcHScuJH9QC"
 ]
